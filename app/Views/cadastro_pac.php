@@ -8,6 +8,7 @@
 <body>
     <div class="cadastroP">
     <h1>Novo Paciente</h1>
+
     <form class="formPaciente">
      <div class="form-group">
         <input type="text" name="nome" placeholder="Nome"><br> <br>
@@ -33,9 +34,22 @@
         <input type="text" name="conv_med" placeholder="Convênio Médico"><br> <br>
     </div>
 
+    <div class="sexo">
+        <p>Sexo</p>
+        <label class="masc">
+            <input type="checkbox">
+            <p>Masculino</p> 
+        </label>
+
+        <label class="fem">
+            <input type="checkbox"><p>Feminino</p>
+            
+        </label>
+    </div>
+
     <div class="arquivo">
     <label for="arquivo">Anexar Laudo:</label>
-    <input type="file" name="arquivo" id="arquivo">
+    <input type="file" name="arquivo" id="arquivo"> 
     </div>
 </form>
 <br> <br>
@@ -48,6 +62,10 @@ body {
     color: #57575f;
 }
 
+.sexo {
+    display: inline;
+    margin: 0;
+}
 
 .cadastroP {
     
@@ -103,4 +121,8 @@ input {
     background-color: #024d9d;
 }
 </style>
+
+<script>
+
+</script>
 </html>

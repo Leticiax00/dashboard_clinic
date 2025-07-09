@@ -207,9 +207,9 @@
     <button id="closeBtn">✕</button>
     <h2>Menu</h2>
     <ul class="nav-menu">
-        <li><a href="<?= base_url('dashboard')?>" class="dashboard" id="dashboard"><i>👨‍👩‍👧</i> Pacientes</li>
+        <li href="<?= base_url('paghome')?>"><a class="dashboard" id="dashboard"><i>👨‍👩‍👧</i>Pacientes</li>
                 <li id="medicos-"class="medicos"><i>🏥</i>Médicos</li>
-                <li class="config"><i>⚙️</i> Configurações</li>
+                <li class="configuracao"><i>⚙️</i> Config</li>
             </ul>
   </div>
 </div>
@@ -231,7 +231,7 @@
     // sidebar 
 
     dashboard.onclick = () => {
-  window.location.href = "paghome.html";
+  window.location.href = "paghome"; // ação do clique do botão
 };
 
   </script>
