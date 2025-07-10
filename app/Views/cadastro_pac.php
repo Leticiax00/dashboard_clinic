@@ -15,7 +15,7 @@
     </div>
 
     <div class="form-group">
-        <input type="date" name="data_nasc" placeholder="Nascimento"><br> <br>
+        <input type="date" name="data_nasc" class="date"><br> <br>
     </div>
 
     <div class="form-group">
@@ -34,44 +34,83 @@
         <input type="text" name="conv_med" placeholder="Convênio Médico"><br> <br>
     </div>
 
-    <div class="sexo">
-        <p>Sexo</p>
-        <label class="masc">
-            <input type="checkbox">
-            <p>Masculino</p> 
-        </label>
+    <div class="pac" >
+        <label for="opcoes">Grupo de Pacientes</label> <br>
 
-        <label class="fem">
-            <input type="checkbox"><p>Feminino</p>
-            
-        </label>
+        <select id="group-pac" name="opcao">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+        </select>
     </div>
 
-    <div class="arquivo">
-    <label for="arquivo">Anexar Laudo:</label>
-    <input type="file" name="arquivo" id="arquivo"> 
+    <div class="sexo" >
+        <label for="opcoes">Sexo</label> <br>
+
+        <select id="opcoes" name="opcao">
+        <option value="1">Masculino</option>
+        <option value="2">Feminino</option>
+        <option value="3">Outros</option>
+        </select>
     </div>
+
+    <div class="arquivo" id="UploadForm" method="post" enctype="multipart/form-data">
+        <label for="arquivo">Anexar Laudo:</label>
+        <input type="file" name="arquivo">     
+        <button type="submit" class="upload">Upload arquivo</button>
+    </div>
+   
+<p id="mensagem"></p>
 </form>
+
 <br> <br>
+    
     <button type="submit" id="button_salva">Salvar</button>
     
 </body>
 <style>
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #57575f;
 }
 
-.sexo {
-    display: inline;
-    margin: 0;
+.arquivo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+}
+
+.date {
+    color:  #57575f;;
+}
+#opcoes {
+    font-size: 1rem;
+    width: 10rem;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.pac {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+#group-pac {
+    font-size: 1rem;
+    width: 10rem;
+    height: 30px;
+    text-align: center;
+    
 }
 
 .cadastroP {
-    
-    padding: 5%;
     background-color: rgb(255, 255, 255);
-    min-width: 50vh;
+    min-width: 70vh;
     box-shadow:  black;
     text-align: center;
     place-items: center;
@@ -84,11 +123,12 @@ body {
 
 .formPaciente {
     padding: 20px;
-    width: 70vh;
+    max-width: 100vh;
     border-radius: 5%;
     box-shadow: 0 5px 20px;
     justify-content: center;
     align-items: center;
+    
 }
 
 form {
@@ -123,6 +163,22 @@ input {
 </style>
 
 <script>
+  const form = document.getElementById('uploadForm');
+  const msg = document.getElementById('mensagem');
 
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    msg.textContent = "⏳ Enviando arquivo...";
+
+    const resposta = await fetch('upload.php', {
+      method: 'POST',
+      body: formData
+    });
+
+    const texto = await resposta.text();
+    msg.textContent = texto;
+  });
 </script>
 </html>

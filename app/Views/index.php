@@ -75,27 +75,6 @@
             margin-bottom: 30px;
         }
 
-        .search-bar {
-            padding: 10px 15px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-            width: 300px;
-        }
-
-        .user-info {
-            display: flex;          
-            align-items: center;
-            
-        }
-
-        .user-info img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        margin-right: 10px;
-            
-        }
-
         .cards-container {
             display: flex;
             gap: 50px;
@@ -122,16 +101,15 @@
         }
 
         #openBtn {
-        padding: 10px 20px;
-        background-color: #007BFF;
-        color: white;
-        border: none;
-        border-radius: 5%;
-        cursor: pointer;
-        margin: 10px;
-        display: flex;
-        position: absolute;
-        top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5%;
+            cursor: pointer;
+            margin: 10px;
+            display: flex;
+            
     }
 
     #sidebar {
@@ -178,6 +156,8 @@
     </style>
 </head>
 <body>
+    <?= view('partials/header') ?>
+
     <div class="container">
         <div class="main-content">
 
@@ -200,40 +180,10 @@
                 </div>
             </div>
             
-     <button id="openBtn">☰ Menu</button>
+     
     <div>
 
-  <div id="sidebar">
-    <button id="closeBtn">✕</button>
-    <h2>Menu</h2>
-    <ul class="nav-menu">
-        <li href="<?= base_url('paghome')?>"><a class="dashboard" id="dashboard"><i>👨‍👩‍👧</i>Pacientes</li>
-                <li id="medicos-"class="medicos"><i>🏥</i>Médicos</li>
-                <li class="configuracao"><i>⚙️</i> Config</li>
-            </ul>
-  </div>
 </div>
-
-  <script>
-    // ocultar sidebar 
-    const sidebar = document.getElementById("sidebar");
-    const openBtn = document.getElementById("openBtn");
-    const closeBtn = document.getElementById("closeBtn");
-    const dashboard = document.getElementById("dashboard");
-
-    openBtn.onclick = () => {
-      sidebar.classList.add("active");
-    };
-
-    closeBtn.onclick = () => {
-      sidebar.classList.remove("active");
-    };
-    // sidebar 
-
-    dashboard.onclick = () => {
-  window.location.href = "paghome"; // ação do clique do botão
-};
-
-  </script>
+  
 </body>
 </html>
