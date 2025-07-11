@@ -6,7 +6,7 @@
     <title>Grupo de Clientes</title>
 </head>
 <body>
-     <?= view('partials/header') ?>
+    <?= view('partials/header') ?>
     <div class="container">
         <form id="cad_group">
             <h1>Cadastrar grupo de pacientes</h1>
@@ -15,6 +15,7 @@
         </form>
     </div>
 
+</body>
 <style>
 
     body {
@@ -67,7 +68,7 @@
         align-items: center;
     }
 
-     #openBtn {
+     /*#openBtn {
             padding: 10px 20px;
             background-color: #007BFF;
             color: white;
@@ -91,7 +92,7 @@
             text-decoration: none;
         }
 
-        /* sidebar */
+        
         #sidebar {
             height: 100%;
             width: 210px;
@@ -162,9 +163,9 @@
 
         .nav-menu li i {
             margin-right: 10px;
-        }
+        } */
 
         
 </style>
-</body>
+
 </html>

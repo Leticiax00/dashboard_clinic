@@ -79,12 +79,12 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-
 }
 
 .date {
     color:  #57575f;;
 }
+
 #opcoes {
     font-size: 1rem;
     width: 10rem;
@@ -139,12 +139,18 @@ form {
    
 }
 
-input {
+ input {
     font-size: 18px;
-    border-left: none;
-    border-top: none;
-    border-right: none;
-    width: 30vh;;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 30vh;
+    outline: none;
+    margin: 10px
+    
+}
+
+ input:focus {
+    border-color: #007BFF;
 }
 
 #button_salva {

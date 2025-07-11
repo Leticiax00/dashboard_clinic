@@ -26,7 +26,7 @@
             margin-bottom: 30px;
         }
 
-        .sidebar {
+        /*.sidebar {
             width: 250px;
             background-color: #0b7dc5;
             color: white;
@@ -44,7 +44,7 @@
             font-size: 1.3rem;
         }
 
-        .nav-menu {
+        /*.nav-menu {
             list-style: none;
         }
 
@@ -61,7 +61,7 @@
 
         .nav-menu li i {
             margin-right: 10px;
-        }
+        }*/
 
         .main-content {
             flex: 1;
@@ -70,10 +70,23 @@
 
         .header {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
+            gap: 20px;              /* espaço entre os links */
+             margin: 30px 0 0 30px; 
         }
+
+        .header a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+  }
+
+  .header a:hover {
+    background-color: #024d9d;
+    color: white;
+  }
 
         .cards-container {
             display: flex;
@@ -100,7 +113,7 @@
             color: #2c3e50;
         }
 
-        #openBtn {
+       /* #openBtn {
             padding: 10px 20px;
             background-color: #007BFF;
             color: white;
@@ -151,16 +164,19 @@
 
     #sidebar ul li {
       margin: 15px 0;
-    }
+    }*/
 
     </style>
 </head>
 <body>
-    <?= view('partials/header') ?>
+    <header>
+
+        </header>
 
     <div class="container">
-        <div class="main-content">
 
+        <div class="main-content">
+    <?= view('partials/header') ?> <br> <br> <br> <br>
             <div class="cards-container">
                 <div class="card">
                     <h3>Pacientes Hoje</h3>
