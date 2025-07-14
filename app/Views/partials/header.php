@@ -5,7 +5,6 @@
     <h2>Menu</h2>
     <ul class="nav-menu">
       <li><a href="<?= base_url('/') ?>"><i>🏠</i> Início</a></li>
-      <li><a href="<?= base_url('paghome') ?>"><i>👨‍👩‍👧</i> Pacientes</a></li>
       <li><a href="<?= base_url('medico_solicitante') ?>"><i>🏥</i> Médicos</a></li>
       <li><a href="<?= base_url('config') ?>"><i>⚙️</i> Config</a></li>
     </ul>
@@ -20,16 +19,16 @@
        color: inherit; 
        text-decoration: none;
        
-       }
+      }
 
     #openBtn {
        padding: 10px 20px; 
        background: #007BFF; 
        color: #fff;
        border: none;
-      border-radius: 5px; 
-        cursor: pointer;
-       }
+       border-radius: 5px; 
+       cursor: pointer;
+      }
 
     #sidebar { 
       height: 100%; 

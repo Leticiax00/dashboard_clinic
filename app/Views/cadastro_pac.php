@@ -34,7 +34,7 @@
         <input type="text" name="conv_med" placeholder="Convênio Médico"><br> <br>
     </div>
 
-    <div class="pac" >
+    <div class="pac" > <!-- Grupo de pacientes -->
         <label for="opcoes">Grupo de Pacientes</label> <br>
 
         <select id="group-pac" name="opcao">
@@ -44,7 +44,7 @@
         </select>
     </div>
 
-    <div class="sexo" >
+    <div class="sexo" > <!-- Opções de sexo de paciente -->
         <label for="opcoes">Sexo</label> <br>
 
         <select id="opcoes" name="opcao">
@@ -54,31 +54,39 @@
         </select>
     </div>
 
+    <div class="med_solicitante" > <!-- Opções médicos solicitantes -->
+        <label for="opcoes">Médico Solicitante</label> <br>
+
+        <select id="opcoes" name="opcao">
+        <option value="1">valor 1</option>
+        <option value="2">valor 2</option>
+        <option value="3">vlor 3</option>
+        </select>
+    </div>
+
     <div class="arquivo" id="UploadForm" method="post" enctype="multipart/form-data">
         <label for="arquivo">Anexar Laudo:</label>
         <input type="file" name="arquivo">     
         <button type="submit" class="upload">Upload arquivo</button>
     </div>
-   
-<p id="mensagem"></p>
+    <p id="mensagem"></p>
+    
+    
 </form>
-
-<br> <br>
-    
-    <button type="submit" id="button_salva">Salvar</button>
-    
+<button type="submit" id="button_salva">Salvar</button>
 </body>
+
 <style>
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #57575f;
+    
 }
 
 .arquivo {
-    display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    
 }
 
 .date {
@@ -94,7 +102,6 @@ body {
 }
 
 .pac {
-    display: flex;
     justify-content: center;
     text-align: center;
     margin: 10px;
@@ -132,7 +139,6 @@ body {
 }
 
 form {
-    
     display: grid; 
     grid-template-columns: 1fr 1fr;
     gap: 5px 10px;
@@ -145,8 +151,6 @@ form {
     border-bottom: 2px solid #ccc;
     width: 30vh;
     outline: none;
-    margin: 10px
-    
 }
 
  input:focus {
@@ -154,13 +158,15 @@ form {
 }
 
 #button_salva {
-    padding: 8px 30px;
+    padding: 10px 50px;
     background-color: #007BFF;
     color: white;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
-    min-width: 40vh;
+    min-width: 10vh;
     height: 40px;
+    align-items: center;
 }
 
 #button_salva:hover {

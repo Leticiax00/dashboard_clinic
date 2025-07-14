@@ -10,13 +10,12 @@
   <div class="header">
     <?= view('partials/header') ?>
     <a href="<?= base_url('cadastro_pac')?>"> Novo Paciente</a>
-    <a href="<?= base_url('group_pac')?>"> Grupo de pacientes</a>
+     <button onclick="abrirModal()">Abrir Modal</button>
   </div>
 
   <div class="card">
     <div class="container">
       <h2>Pacientes</h2>
-      <!-- Número de pacientes -->
     </div>
   </div>
 </body>
@@ -36,12 +35,12 @@
 
   .header {
     display: flex;
-    gap: 20px;              /* espaço entre os links */
+    gap: 30px;              /* espaço entre os links */
     margin: 30px 0 0 30px; 
     
   }
 
-  .header a {
+  a {
     color: #ffffff;
     text-decoration: none;
     padding: 8px 16px;
@@ -49,6 +48,12 @@
     border-radius: 4px;
     background-color: #007BFF;
   }
+  
+  .header a {
+   
+    
+  }
+
 
   .header a:hover {
     background-color: #024d9d;

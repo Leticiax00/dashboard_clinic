@@ -7,15 +7,17 @@
 </head>
 
 <body>
-    <header>
+    <div class="header">
         <?= view('partials/header')?>
-        <h1>teste</h1>
-    </header>
+    </div>
 
   <div class="container">
     <h1>Médico Solicitante</h1>
-    <p>Médicos que solicitaram o exame a seguir</p>
-    <input type="text" placeholder="Digite aqui" />
+    <p>Médicos que solicitam o exame</p>
+    <input type="text" placeholder="Ex.:Flávio Bezerra">
+
+    <h2>Especialidade</h2>
+    <input type="text" placeholder="Ex.:Gastroenterologista" />
     <br />
     <button type="submit">Salvar</button>
   </div>
@@ -23,32 +25,28 @@
 
   <style>
     body {
-      display: flex;
+      max-height: 300vh;
+      max-width: 200vh;
       justify-content: center;
-      align-items: center;    
-      min-height: 100vh;      
-      margin: 0;
-      font-family: sans-serif;
+      align-items: center;
+      
     }
 
     .header {
-    display: flex;
-    gap: 20px;              /* espaço entre os links */
-    margin: 30px 0 0 30px; 
+    gap: 100px;              
+    margin: 0; 
     
   }
 
   .header a {
     color: #ffffff;
     text-decoration: none;
-    padding: 8px 16px;
-    border: none;
     border-radius: 4px;
-    background-color: #007BFF;
+    text-decoration: none;
+    margin-left: 0;
   }
 
   .header a:hover {
-    background-color: #024d9d;
     color: white;
   }
 
@@ -56,12 +54,14 @@
     .container {
       background: white;
       color: #57575f;
-      padding: 40px;
+      padding: 5px 10px;
       box-shadow: 0 5px 20px;
       border-radius: 20px;
       max-width: 400px;
       width: 100%;
       text-align: center;
+      justify-content: center;
+      
     }
 
     .container input {
@@ -75,7 +75,7 @@
     }
 
     .container input:focus { /* Quando está em foco, o usuário interagindo com ele */
-      border-color: #007BFF;
+      border-color: #007BFF; /* interação das linhas do imput */
     }
 
     button {
