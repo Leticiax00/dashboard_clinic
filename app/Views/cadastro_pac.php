@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pacientes</title>
+    <link rel="stylesheet" href="<?= base_url('css/cadastro_pac.css') ?>">
+    <script src="<?= base_url('js/cadastro_pac.js') ?>"></script> 
 </head>
 <body>
+    <div class="header">
+    <?= view('partials/header') ?>
+    </div>
+    
     <div class="cadastroP">
     <h1>Novo Paciente</h1>
 
@@ -70,127 +76,14 @@
         <button type="submit" class="upload">Upload arquivo</button>
     </div>
     <p id="mensagem"></p>
-    
-    
+
+
+
 </form>
+<br> 
 <button type="submit" id="button_salva">Salvar</button>
 </body>
 
-<style>
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #57575f;
-    
-}
 
-.arquivo {
-    justify-content: center;
-    
-}
-
-.date {
-    color:  #57575f;;
-}
-
-#opcoes {
-    font-size: 1rem;
-    width: 10rem;
-    height: 30px;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.pac {
-    justify-content: center;
-    text-align: center;
-    margin: 10px;
-}
-
-#group-pac {
-    font-size: 1rem;
-    width: 10rem;
-    height: 30px;
-    text-align: center;
-    
-}
-
-.cadastroP {
-    background-color: rgb(255, 255, 255);
-    min-width: 70vh;
-    box-shadow:  black;
-    text-align: center;
-    place-items: center;
-}
-
-.form-group {
-    flex-direction: column;
-    text-align: center;
-}
-
-.formPaciente {
-    padding: 20px;
-    max-width: 100vh;
-    border-radius: 5%;
-    box-shadow: 0 5px 20px;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-form {
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    gap: 5px 10px;
-   
-}
-
- input {
-    font-size: 18px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    width: 30vh;
-    outline: none;
-}
-
- input:focus {
-    border-color: #007BFF;
-}
-
-#button_salva {
-    padding: 10px 50px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    min-width: 10vh;
-    height: 40px;
-    align-items: center;
-}
-
-#button_salva:hover {
-    background-color: #024d9d;
-}
-</style>
-
-<script>
-  const form = document.getElementById('uploadForm');
-  const msg = document.getElementById('mensagem');
-
-  form.addEventListener('submit', async function(e) {
-    e.preventDefault();
-
-    const formData = new FormData(form);
-    msg.textContent = "⏳ Enviando arquivo...";
-
-    const resposta = await fetch('upload.php', {
-      method: 'POST',
-      body: formData
-    });
-
-    const texto = await resposta.text();
-    msg.textContent = texto;
-  });
-</script>
 </html>

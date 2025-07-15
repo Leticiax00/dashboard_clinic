@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #57575f;
+    text-align: center;;
+}
+
+.arquivo {
+    justify-content: center;
+    
+}
+
+.date {
+    color:  #57575f;;
+}
+
+
+.header {
+    display: flex; /* Reposicionamento dos itens da página */
+    gap: 20px; /* Espaçamento entre os itens do header */             
+    margin: 30px; /* Canto superior esquerdo */
+    position: relative; /* Permite que o menu fique fixo no canto */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+}
+
+#opcoes {
+    font-size: 1rem;
+    width: 10rem;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.pac {
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+#group-pac {
+    font-size: 1rem;
+    width: 10rem;
+    height: 30px;
+    text-align: center;
+    
+}
+
+.cadastroP {
+    background-color: rgb(255, 255, 255);
+    min-width: 30vh;
+    box-shadow:  black;
+    text-align: center;
+    place-items: center;
+    margin-top: 0;
+    
+}
+
+.form-group {
+    flex-direction: column;
+    text-align: center;
+}
+
+.formPaciente {
+    padding: 5vh;
+    max-width: 100vh;
+    
+    border-radius: 5%;
+    box-shadow: 0 5px 20px;
+    justify-content: center;
+    
+    
+}
+
+form {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 10px;
+   text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px; /* Limita a largura do formulário */
+}
+
+ input {
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 30vh;
+    outline: none;
+}
+
+ input:focus {
+    border-color: #007BFF;
+}
+
+#button_salva {
+    padding: 10px 50px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width: 10vh;
+    height: 40px;
+    align-items: center;
+    
+}
+
+#button_salva:hover {
+    background-color: #024d9d;
+}
