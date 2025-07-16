@@ -3,31 +3,73 @@ body {
   background: #f2f2f2;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  width: 70%;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .container {
-  max-width: 500px;
-  margin: 2rem;
-  background: #fff;
-  padding: 1rem;
+  padding-left: 60px;
+  padding-right: 40px;
+  background-color: #f9f9f9;
   border-radius: 8px;
-  
+  min-width: 20px;
+  overflow: hidden; 
+}
+
+.scrollable-content {
+     overflow-y: hidden;
+     width: calc(80% + 3px); 
+   }
+
+.calendario-container {
+  width: 100%;
+  min-width: 90px;
+  max-width: 400px;
+ 
 }
 
 .calendario-wrapper {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   gap: 2rem;
+  justify-content: center;
 }
 
-.calendario-container {
-  flex: 1;
+.agendamento-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 10px;
 }
 
 .cabecalho-calendario {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -35,38 +77,57 @@ body {
   background: #007bff;
   color: #fff;
   border: none;
-  padding: 0.5rem 1rem;
   border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.2em;
   cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button-nav:hover {
+  background: #0056b3;
 }
 
 .mes-ano {
-  margin: 0 1rem;
   font-weight: bold;
+  font-size: 1em;
+  flex: 5;
+  text-align: center;
+  
 }
 
 .dias-semana {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(8, 3fr);
   text-align: center;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #555;
+  margin: 20px;
+
 }
 
 .grade-dias {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 0.2rem;
+  width: 100%;
 }
 
 .dia {
   background: #fff;
   border: 1px solid #ccc;
-  height: 60px;
+  height: 40px;
+  
+  min-width: 35px;
+  max-width: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  box-sizing: border-box;
+  transition: background 0.2s, color 0.2s;
 }
 
 .dia:hover {
@@ -76,38 +137,46 @@ body {
 .dia.hoje {
   background: #007bff;
   color: #fff;
+  font-weight: bold;
 }
 
 .dia.vazio {
-  background: #f2f2f2;
+  background: #b6b5b5;
   border: none;
+  cursor: default;
 }
 
-.painel-agendamento {
-  display: none;
-  flex-direction: column;
-  width: 250px;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  padding: 1rem;
-  border-radius: 8px;
-}
-
-.painel-agendamento.ativo {
-  display: flex;
-}
-
-.button-agendamento {
-  display: inline-block;
-  margin-top: 1rem;
-  background: #007bff;
-  color: white;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 4px;
+.container-data {
+  margin-right: 150px;
   text-align: center;
 }
 
-.button-agendamento:hover {
+.button-agendamento,
+.button-agendamento2 {
+  display: inline-block;
+  margin-top: 0.3rem; 
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.button-agendamento:hover,
+.button-agendamento2:hover {
   background: #0056b3;
 }
+
+.painel-agendamento {
+  display:block;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  border-radius: 8px;
+  z-index: 5;
+  margin-top: 15vh;
+}
+
+

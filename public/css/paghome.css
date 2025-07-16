@@ -50,9 +50,8 @@
     background-color: white;
     border-radius: 1rem; 
     box-shadow:  0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 2rem;  
+    padding: 200px;  
     flex-direction: column;
-    width: 100%;
-    max-width: 30rem; /* Largura do card */
-    margin: 0 auto; /* Posição */
+    width: 500px;
+    margin: 0 auto; 
   }

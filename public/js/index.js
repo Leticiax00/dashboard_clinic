@@ -39,8 +39,26 @@ function updateCalendar() {
     dayElement.addEventListener('click', () => {
       const painel = document.getElementById('painel-agendamento');
       painel.classList.add('ativo');
-      document.getElementById('data-selecionada').textContent =
-        `Dia ${i} de ${monthNames[currentMonth]} de ${currentYear}`;
+      const dataSelecionada = document.getElementById('container-data');
+      const btnAgendamento = document.querySelector('.button-agendamento');
+      const selecionada = new Date(currentYear, currentMonth, i);
+
+      dataSelecionada.textContent = `Dia ${i} de ${monthNames[currentMonth]} de ${currentYear}`;
+
+      // Verifica se o dia é anterior ao hoje
+      const hoje = new Date(todayYear, todayMonth, today);
+      if (selecionada < hoje) {
+      alert('Não é possível agendar uma consulta em uma data anterior ao dia de hoje.\nCaso deseje verificar consultar passadas, entre em "Consultas".');
+      if (painel) {
+        painel.classList.remove('ativo'); // Volta para seleção de data
+      }
+      } else {
+      btnAgendamento.style.pointerEvents = 'auto';
+      btnAgendamento.style.opacity = '1';
+      
+      const mensagemErro = painel.querySelector('span');
+      if (mensagemErro) mensagemErro.remove();
+      }
     });
 
     daysGridElement.appendChild(dayElement);
