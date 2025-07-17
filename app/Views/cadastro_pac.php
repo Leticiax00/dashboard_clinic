@@ -10,11 +10,15 @@
 <body>
     <div class="header">
     <?= view('partials/header') ?>
+    <a href="<?= base_url('/')?>"> Home</a>
+    <a href="<?= base_url('cadastro_pac')?>"> Novo Paciente</a>
+    <button onclick="abrirModal()" class="botao_pac">Grupo de Pacientes</button>
+    
     </div>
     
     <div class="cadastroP">
     <h1>Novo Paciente</h1>
-
+    <br>
     <form class="formPaciente">
      <div class="form-group">
         <input type="text" name="nome" placeholder="Nome"><br> <br>
@@ -72,13 +76,11 @@
 
     <div class="arquivo" id="UploadForm" method="post" enctype="multipart/form-data">
         <label for="arquivo">Anexar Laudo:</label>
-        <input type="file" name="arquivo">     
+        <input type="file" name="arquivo" class="ficheiro">    
+        <br> <br>
         <button type="submit" class="upload">Upload arquivo</button>
     </div>
     <p id="mensagem"></p>
-
-
-
 </form>
 <br> 
 <button type="submit" id="button_salva">Salvar</button>

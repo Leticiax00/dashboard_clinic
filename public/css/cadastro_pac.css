@@ -1,26 +1,86 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #57575f;
-    text-align: center;;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+body {
+    background: linear-gradient(135deg,rgb(111, 170, 247) 0%,rgb(211, 220, 232) 100%);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    gap: 30px;              
+    margin: 30px 0 0 30px; 
+    width: 98%;
+
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+  }
+  
+  .botao_pac {
+   color: white;
+   background-color: #007BFF;
+   padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .home_pac {
+    color: white;
+    background-color: #007BFF;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .header :hover {
+    background-color: #024d9d;
+    color: white;
+  }
 
 .arquivo {
     justify-content: center;
     
 }
 
-.date {
-    color:  #57575f;;
+.ficheiro {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;  
+    font-size: 13px; 
 }
 
+.upload {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-.header {
-    display: flex; /* Reposicionamento dos itens da página */
-    gap: 20px; /* Espaçamento entre os itens do header */             
-    margin: 30px; /* Canto superior esquerdo */
-    position: relative; /* Permite que o menu fique fixo no canto */
-    top: 0; /* Alinha ao topo */
-    left: 0; /* Alinha à esquerda */
+.date {
+    color:  #57575f;;
 }
 
 #opcoes {
@@ -46,15 +106,21 @@ body {
 }
 
 .cadastroP {
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(135deg,rgb(111, 170, 247) 0%,rgb(211, 220, 232) 100%);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
     min-width: 30vh;
-    box-shadow:  black;
+    box-shadow: rgb(111, 170, 247);
     text-align: center;
     place-items: center;
     margin-top: 0;
     
 }
 
+h1 {
+    color: #ffffff;
+}
 .form-group {
     flex-direction: column;
     text-align: center;
@@ -63,12 +129,10 @@ body {
 .formPaciente {
     padding: 5vh;
     max-width: 100vh;
-    
     border-radius: 5%;
     box-shadow: 0 5px 20px;
     justify-content: center;
-    
-    
+    background-color: white;
 }
 
 form {
@@ -78,7 +142,7 @@ form {
    text-align: center;
     padding: 20px;
     margin: 0 auto;
-    max-width: 800px; /* Limita a largura do formulário */
+    max-width: 800px;
 }
 
  input {

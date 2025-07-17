@@ -52,16 +52,28 @@ function updateCalendar() {
       if (painel) {
         painel.classList.remove('ativo'); // Volta para seleção de data
       }
+      btnAgendamento.classList.add('disabled');
       } else {
-      btnAgendamento.style.pointerEvents = 'auto';
-      btnAgendamento.style.opacity = '1';
-      
+      btnAgendamento.classList.remove('disabled');
       const mensagemErro = painel.querySelector('span');
       if (mensagemErro) mensagemErro.remove();
       }
+      
+      const mensagemErro = painel.querySelector('span');
+      if (mensagemErro) mensagemErro.remove();
     });
 
     daysGridElement.appendChild(dayElement);
+
+    const btnAgendamento = document.querySelector('.button-agendamento');
+
+btnAgendamento.addEventListener('click', (e) => {
+  if (btnAgendamento.classList.contains('desativado')) {
+    e.preventDefault();
+    alert('Não é permitido agendar consultas com datas anteriores.');
+  }
+});
+
   }
 
   const remainingCells = 42 - (firstDay + lastDay);
@@ -92,3 +104,5 @@ function nextMonth() {
 }
 
 updateCalendar();
+
+
