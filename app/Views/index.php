@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="<?= base_url('css/index.css') ?>" />
 </head>
 <body>
+
+  <div class="area">
+    <ul class="circles">
+      <li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li>
+    </ul>
+  </div>
+
   <div class="header">
     <?= view('partials/header') ?>
     <a href="<?= base_url('/')?>">Home</a>
@@ -58,5 +66,20 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+  }
+  @property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+
+:root {
+  --card-height: 20vh; /* plano de fundo */
+  --card-width: 50vh;
+}
+
 </style>
 </html>
