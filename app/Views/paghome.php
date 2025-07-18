@@ -8,9 +8,16 @@
 </head>
 
 <body>
+  <div class="area">
+    <ul class="circles">
+      <li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li>
+    </ul>
+  </div>
+  
   <div class="header">
     <?= view('partials/header') ?>
-    <a href="<?= base_url('/')?>" class="home_pac">Home</a>
+    <a href="<?= base_url('inicial')?>" class="home_pac">Home</a>
     <a href="<?= base_url('cadastro_pac')?>"> Novo Paciente</a>
      <button onclick="abrirModal()" class="botao_pac">Grupo de Pacientes</button>
     

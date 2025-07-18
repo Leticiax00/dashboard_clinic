@@ -4,6 +4,7 @@ let currentMonth = currentDate.getMonth();
 let today = currentDate.getDate();
 let todayMonth = currentMonth;
 let todayYear = currentYear;
+let dataSelecionada = null; 
 
 function updateCalendar() {
   const monthYearElement = document.getElementById('month-year');
@@ -39,41 +40,27 @@ function updateCalendar() {
     dayElement.addEventListener('click', () => {
       const painel = document.getElementById('painel-agendamento');
       painel.classList.add('ativo');
-      const dataSelecionada = document.getElementById('container-data');
+
+      const painelData = document.getElementById('container-data');
       const btnAgendamento = document.querySelector('.button-agendamento');
+
       const selecionada = new Date(currentYear, currentMonth, i);
+      dataSelecionada = selecionada; // <-- agora REALMENTE armazena na global!
 
-      dataSelecionada.textContent = `Dia ${i} de ${monthNames[currentMonth]} de ${currentYear}`;
+      painelData.textContent = `Dia ${i} de ${monthNames[currentMonth]} de ${currentYear}`;
 
-      // Verifica se o dia é anterior ao hoje
       const hoje = new Date(todayYear, todayMonth, today);
       if (selecionada < hoje) {
-      alert('Não é possível agendar uma consulta em uma data anterior ao dia de hoje.\nCaso deseje verificar consultar passadas, entre em "Consultas".');
-      if (painel) {
-        painel.classList.remove('ativo'); // Volta para seleção de data
-      }
-      btnAgendamento.classList.add('disabled');
+        alert('Não é possível agendar uma consulta em uma data anterior ao dia de hoje.\nCaso deseje verificar consultas passadas, entre em "Consultas".');
+        painel.classList.remove('ativo');
+        btnAgendamento.classList.add('disabled');
+        dataSelecionada = null; // invalida!
       } else {
-      btnAgendamento.classList.remove('disabled');
-      const mensagemErro = painel.querySelector('span');
-      if (mensagemErro) mensagemErro.remove();
+        btnAgendamento.classList.remove('disabled');
       }
-      
-      const mensagemErro = painel.querySelector('span');
-      if (mensagemErro) mensagemErro.remove();
     });
 
     daysGridElement.appendChild(dayElement);
-
-    const btnAgendamento = document.querySelector('.button-agendamento');
-
-btnAgendamento.addEventListener('click', (e) => {
-  if (btnAgendamento.classList.contains('desativado')) {
-    e.preventDefault();
-    alert('Não é permitido agendar consultas com datas anteriores.');
-  }
-});
-
   }
 
   const remainingCells = 42 - (firstDay + lastDay);
@@ -105,4 +92,27 @@ function nextMonth() {
 
 updateCalendar();
 
+const btnNovaConsulta = document.querySelector('.button-agendamento');
 
+btnNovaConsulta.addEventListener('click', function (e) {
+  if (!dataSelecionada) {
+    e.preventDefault();
+    alert("⚠️ Selecione uma data valida de consulta!");
+    return;
+  }
+
+  const hoje = new Date();
+  hoje.setHours(0, 0, 0, 0);
+
+  const dataSelecionadaObj = new Date(dataSelecionada);
+  dataSelecionadaObj.setHours(0, 0, 0, 0);
+
+  if (dataSelecionadaObj < hoje) {
+    e.preventDefault();
+    alert("⚠️ Não é possível agendar para datas passadas.\nCaso queira verificar consultas passadas, entre em \"Consultas\".");
+  }
+});
+
+function abrirModal() {
+  alert("Cadastrar grupo de pacientes");
+}
