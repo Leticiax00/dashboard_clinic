@@ -47,18 +47,14 @@
         <div class="painel-agendamento" id="painel-agendamento">
           <h3 id="container-data">Selecione uma data</h3>
           <a href="<?= base_url('paghome') ?>" id="button_nova.consulta" class="button-agendamento">Nova Consulta</a>
-          <br>
-          <a href="<?= base_url('consultas') ?>" class="button-agendamento2">Consultas</a>
+          <br> <br>
+          <a href="<?= base_url('consultas') ?>" class="button-agendamento2">Agenda Médica</a>
         </div>
       </div>
 
     </div>
   </div>
-  <script src="<?= base_url('js/inicial.js') ?>">
-    function abrirModal() {
-    alert("Cadastrar grupo de pacientes");
-  }
-  </script>
+  <script src="<?= base_url('js/inicial.js') ?>"></script>
 </body>
 
 <style>

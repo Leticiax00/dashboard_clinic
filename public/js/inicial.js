@@ -51,7 +51,7 @@ function updateCalendar() {
 
       const hoje = new Date(todayYear, todayMonth, today);
       if (selecionada < hoje) {
-        alert('Não é possível agendar uma consulta em uma data anterior ao dia de hoje.\nCaso deseje verificar consultas passadas, entre em "Consultas".');
+        alert('Não é possível agendar uma consulta em uma data anterior ao dia de hoje.\nCaso deseje verificar consultas passadas, entre em "Agenda Médica".');
         painel.classList.remove('ativo');
         btnAgendamento.classList.add('disabled');
         dataSelecionada = null; // invalida!

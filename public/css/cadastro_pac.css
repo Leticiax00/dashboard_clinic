@@ -119,12 +119,20 @@ body {
 }
 
 .ficheiro {
-    width: 300px;
+    width: 280px;
     height: 30px;
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 5px;  
     font-size: 13px; 
+}
+
+.Nome {
+    margin-top: 50px;
+}
+
+.DataNasc {
+    margin-top: 50px;
 }
 
 .upload {
@@ -188,14 +196,16 @@ h1 {
 
 .formPaciente {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 10px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  max-width: 600px;
-  margin: 0 auto;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 0px; /* itens mais próximos */
+padding: 0px; /* menos espaço interno */
+background: white;
+border-radius: 10px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+max-width: 600px;
+margin: 0 auto;
+position: relative;
+z-index: 1;
 }
 
 .formPaciente .observacoes {

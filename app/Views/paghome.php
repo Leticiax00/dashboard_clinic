@@ -25,9 +25,12 @@
 
   <div class="card">
     <div class="container">
-      <h2>Pacientes</h2>
+      <h2>Pacientes</h2> <br> <br>
+      <span class="placeholder">Nenhum paciente cadastrado</span>
     </div>
   </div>
+
+  
 </body>
 
 <script>
