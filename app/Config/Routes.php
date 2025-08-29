@@ -12,7 +12,8 @@ $routes->get('paghome', 'Paghome');
 $routes->get('group_pac','Group_pac');
 $routes->get('medico_solicitante','Medico_solicitante');
 $routes->get('consultas', 'Consultas');
-$routes->get('testetable', to:'TesteTable');
-$routes->get('testdb', 'TestDb');
 $routes->post('pacientes/salvar', 'Pacientes::salvar');
+$routes->get('pacientes', 'Pacientes::index'); 
+$routes->post('pacientes/salvar', 'Pacientes::salvar'); 
+
 

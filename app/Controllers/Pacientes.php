@@ -18,14 +18,14 @@ class Pacientes extends BaseController
 
         $data = [
             'nome'              => $this->request->getPost('nome'),
-            'data_nasc'         => $this->request->getPost('data_nasc'),
+            'data_nascimento'   => $this->request->getPost('data_nasc'), // cuidado: no Model está "data_nascimento"
             'cpf'               => $this->request->getPost('cpf'),
             'rg'                => $this->request->getPost('rg'),
             'endereco'          => $this->request->getPost('endereco'),
-            'conv_med'          => $this->request->getPost('conv_med'),
-            'grupo_pacientes'   => $this->request->getPost('opcao'), // grupo selecionado
-            'sexo'              => $this->request->getPost('opcao'), // sexo selecionado
-            'medico_solicitante'=> $this->request->getPost('opcao'), // médico selecionado
+            'convenio_medico'   => $this->request->getPost('conv_med'),
+            'grupo_pacientes'   => $this->request->getPost('grupo_pacientes'),
+            'sexo'              => $this->request->getPost('sexo'),
+            'medico_solicitante'=> $this->request->getPost('medico_solicitante'),
             'laudo_url'         => $laudoUrl,
             'observacoes'       => $this->request->getPost('observacoes'),
             'data_cadastro'     => date('Y-m-d H:i:s')
@@ -34,5 +34,14 @@ class Pacientes extends BaseController
         $pacienteModel->insert($data);
 
         return redirect()->back()->with('success', 'Paciente cadastrado com sucesso!');
+    }
+
+    // 🔹 Novo método para listar pacientes
+    public function index()
+    {
+        $pacienteModel = new PacienteModel();
+        $data['paghome'] = $pacienteModel->findAll();
+
+        return view('paghome', $data);
     }
 }
