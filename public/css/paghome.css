@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    z-index: 1;
     
   }
   @property --rotate {
@@ -36,7 +37,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  pointer-events: none; /* Não bloqueia cliques */
+  pointer-events: none; 
 }
 
 .circles li {
@@ -81,6 +82,58 @@
     margin: 0;
   
   }
+  
+      h1 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .table-container {
+            overflow-x: auto; /* scroll se a tabela for maior que a tela */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 10px 12px;
+            text-align: center; 
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+        th {
+            background: #050159; 
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        tr:hover {
+            background: #eef2ff;
+        }
+        .placeholder {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 15px;
+            background: #fef3c7;
+            color: #92400e;
+            border: 1px solid #fcd34d;
+            border-radius: 6px;
+            text-align: center;
+            width: fit-content;
+        }
+
+        table {
+          margin-top: 20px;
+          width: 100vh;
+        }
 
   .header {
   display: flex;

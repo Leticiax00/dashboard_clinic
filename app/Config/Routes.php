@@ -15,5 +15,7 @@ $routes->get('consultas', 'Consultas');
 $routes->post('pacientes/salvar', 'Pacientes::salvar');
 $routes->get('pacientes', 'Pacientes::index'); 
 $routes->post('pacientes/salvar', 'Pacientes::salvar'); 
+$routes->get('pacientes/editar/(:num)', 'Pacientes::editar/$1');
+$routes->post('pacientes/atualizar/(:num)', 'Pacientes::atualizar/$1');
 
 
