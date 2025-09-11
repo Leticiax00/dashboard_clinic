@@ -15,13 +15,7 @@
     </ul>
   </div>
 
-  <div class="header">
-    <?= view('partials/header') ?>
-    <a href="<?= base_url('inicial')?> " class="button_home">Home</a>
-    <a href="<?= base_url('cadastro_pac')?>"> Novo Paciente</a>
-     <button onclick="abrirModal()" class="botao_pac">Grupo de Pacientes</button>
-     
-  </div>
+   <?php include 'partials/header.php'; ?>
 
   <div class="container-wrapper">
     <div class="container">
@@ -45,6 +39,7 @@
           <div class="grade-dias" id="days-grid"></div>
         </div>
         <div class="painel-agendamento" id="painel-agendamento">
+          <h2 id="dia-semana"></h2>
           <h3 id="container-data">Selecione uma data</h3>
           <a href="<?= base_url('paghome') ?>" id="button_nova.consulta" class="button-agendamento">Nova Consulta</a>
           <br> <br>
@@ -54,35 +49,23 @@
 
     </div>
   </div>
-  <script src="<?= base_url('js/inicial.js') ?>"></script>
-</body>
 
+  <div id="modal" class="modal">
+  <div class="modal-conteudo">
+    <span class="fechar">&times;</span>
+    <h2>Novo Grupo de Clientes</h2>
+    
+    <form action="<?= base_url('grupos/adicionar') ?>" method="post">
+      <label for="nome">Nome do Grupo:</label>
+      <input type="text" id="nome" name="nome" required>
+      <br>
+      <button type="submit">Salvar</button>
+    </form>
+  </div>
+</div>
+
+  
 <style>
-  .botao_pac {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-
-  .button_home {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 10px;
-  }
-
-  .botao_pac:hover {
-    background-color: #0056b3;
-  }
-
   @property --rotate {
   syntax: "<angle>";
   initial-value: 132deg;
@@ -97,5 +80,63 @@
   --card-width: 50vh;
 }
 
+/* Config modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Conteúdo da janela */
+.modal-conteudo {
+  background: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+}
+
+/* Botão fechar */
+.fechar {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+}
 </style>
+
+<script>
+// Pega os elementos
+const modal = document.getElementById("modal");
+const btnAbrir = document.getElementById("abrirModal");
+const btnFechar = document.querySelector(".fechar");
+
+// Abre o modal
+btnAbrir.addEventListener("click", () => {
+  modal.style.display = "flex";
+});
+
+// Fecha o modal
+btnFechar.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Fecha se clicar fora do conteúdo
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+</script>
+
+<script src="<?= base_url('js/inicial.js') ?>"></script>
+</body>
 </html>
+

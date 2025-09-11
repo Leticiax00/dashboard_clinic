@@ -1,0 +1,47 @@
+CRITICAL - 2025-09-08 13:26:50 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: paghome]
+in APPPATH\Views\paghome.php on line 44.
+ 1 APPPATH\Views\paghome.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\Web_Clinic 2.0\\app\\Views\\paghome.php', 44)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Web_Clinic 2.0\\app\\Views\\paghome.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('paghome', [], true)
+ 5 APPPATH\Controllers\paghome.php(16): view('paghome', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paghome->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paghome))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Web_Clinic 2.0\\public\\index.php')
+CRITICAL - 2025-09-08 13:54:16 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes)
+[Method: GET, Route: inicial]
+in APPPATH\Views\partials\header.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-09-08 13:54:20 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes)
+[Method: GET, Route: cadastro_pac]
+in APPPATH\Views\partials\header.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-09-08 14:18:20 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes)
+[Method: GET, Route: inicial]
+in APPPATH\Views\partials\header.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-09-08 14:19:19 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 262144 bytes)
+[Method: GET, Route: inicial]
+in SYSTEMPATH\Common.php on line 1173.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-09-08 14:20:14 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 262144 bytes)
+[Method: GET, Route: inicial]
+in SYSTEMPATH\Common.php on line 1173.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-09-08 14:20:18 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 262144 bytes)
+[Method: GET, Route: inicial]
+in SYSTEMPATH\Common.php on line 1173.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-09-08 14:21:42 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes)
+[Method: GET, Route: inicial]
+in APPPATH\Views\partials\header.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-09-08 14:22:25 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes)
+[Method: GET, Route: inicial]
+in APPPATH\Views\partials\header.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

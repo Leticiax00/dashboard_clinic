@@ -18,13 +18,8 @@
     </ul>
 </div>
 
-<div class="header">
     <?= view('partials/header') ?>
-    <a href="<?= base_url('inicial')?>" class="button_home"> Home</a>
-    <a href="<?= base_url('cadastro_pac')?>"> Novo Paciente</a>
-    <button onclick="abrirModal()" class="botao_pac">Grupo de Pacientes</button>
-</div>
-<br>
+    
 
 <h1>Novo Paciente</h1>
 <br>
@@ -79,11 +74,7 @@
 
     <div class="med_solicitante"> <!-- Opções médicos solicitantes -->
         <label for="medico-solicitante">Médico Solicitante</label> <br>
-        <select id="medico-solicitante" name="medico_solicitante">
-            <option value="valor 1">Valor 1</option>
-            <option value="valor 2">Valor 2</option>
-            <option value="valor 3">Valor 3</option>
-        </select>
+        <input type="text" name="medico_solicitante" placeholder="Nome do Médico">
     </div>
 
     <div class="arquivo" id="UploadForm">
@@ -124,15 +115,21 @@ document.getElementById('button_salva').addEventListener('click', function(e) {
   campos.forEach(function(campo) {
     if (!campo.value.trim()) {
       todosPreenchidos = false;
+      campo.style.borderBottom = "1px solid red"; // destaca campo vazio
+    } else {
+      campo.style.border = ""; // remove destaque se preenchido
     }
   });
 
   if (!todosPreenchidos) {
+    e.preventDefault(); // impede envio do formulário
     alert('Por favor, preencha todos os campos antes de salvar');
   } else {
-    document.getElementById('mensagem').textContent = '';
+    document.getElementById('mensagem').textContent = 'Enviando...';
+    // o form será enviado normalmente
   }
 });
+
 </script>
 
 </body>

@@ -121,13 +121,7 @@
         .placeholder {
             display: block;
             margin: 20px auto;
-            padding: 12px 15px;
-            background: #fef3c7;
-            color: #92400e;
-            border: 1px solid #fcd34d;
-            border-radius: 6px;
-            text-align: center;
-            width: fit-content;
+            border: 1px solid #ffffff;
         }
 
         table {
@@ -135,50 +129,16 @@
           width: 100vh;
         }
 
-  .header {
-  display: flex;
-  gap: 30px;
-  margin: 30px 0 0 30px;
-  position: relative;
-  z-index: 1;
-  border-bottom: #ccc solid 2px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 10px;
-  
-
-  }
-
   a {
     color: #ffffff;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 20px;
     border: none;
     border-radius: 4px;
     background-color: #007BFF;
   }
   
-  .botao_pac {
-   color: white;
-   background-color: #007BFF;
-   padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-
-  .home_pac {
-    color: white;
-    background-color: #007BFF;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 50px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-
-  .header :hover {
+  header :hover {
     background-color: #024d9d;
     color: white;
   }
@@ -221,9 +181,10 @@
 
 .placeholder {
   color: rgba(0, 0, 0, 0.425);
-  font-size: 15px;
+  font-size: 20px;
   background-color: #cccccc69;
   text-align: center;
   border-radius: 10px;
-  padding: 20px;
+  padding: 60px;
+  width: 30pc;
 }

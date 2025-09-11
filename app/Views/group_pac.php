@@ -15,7 +15,7 @@
         <form id="cad_group">
             <h1>Cadastrar grupo de pacientes</h1>
             <p> </p>
-            <input type="text" placeholder="Ex.: Assú"> <br> <br></p>
+            <input type="text" placeholder="Ex.: Pacientes Assú"> <br> <br></p>
             <button type="submit">Salvar</button>
         </form>
     </div>

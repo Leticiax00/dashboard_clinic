@@ -15,12 +15,7 @@
     </ul>
   </div>
   
-  <div class="header">
-    <?= view('partials/header') ?>
-    <a href="<?= base_url('inicial')?>" class="home_pac">Home</a>
-    <a href="<?= base_url('cadastro_pac')?>"> Novo Paciente</a>
-    <button onclick="abrirModal()" class="botao_pac">Grupo de Pacientes</button>
-  </div>
+    <?= view('partials/header') ?> 
 
 <?php if (!empty($pacientes)): ?>
     <div class="scroll-container">
@@ -40,6 +35,7 @@
     <th>Laudo URL</th>
     <th>Observações</th>
     <th>Data </th>
+    <th></th>
     <th></th>
   </tr>
 </thead>

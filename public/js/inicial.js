@@ -47,7 +47,10 @@ function updateCalendar() {
       const selecionada = new Date(currentYear, currentMonth, i);
       dataSelecionada = selecionada; // <-- agora REALMENTE armazena na global!
 
-      painelData.textContent = `Dia ${i} de ${monthNames[currentMonth]} de ${currentYear}`;
+      // Adicionado: mostrar dia da semana
+      const diasSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
+      const diaSemana = diasSemana[selecionada.getDay()];
+      painelData.textContent = `${diaSemana}, ${i} de ${monthNames[currentMonth]} de ${currentYear}`;
 
       const hoje = new Date(todayYear, todayMonth, today);
       if (selecionada < hoje) {
