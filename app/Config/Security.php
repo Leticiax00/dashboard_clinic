@@ -26,7 +26,10 @@ class Security extends BaseConfig
      */
     public bool $tokenRandomize = false;
 
+<<<<<<< HEAD
     
+=======
+>>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7
     /**
      * --------------------------------------------------------------------------
      * CSRF Token Name

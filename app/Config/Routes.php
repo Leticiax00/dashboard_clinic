@@ -5,17 +5,22 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+<<<<<<< HEAD
 $routes->get('/', function () {
     return view('login/index');
 });
 
 // Rotas principais
+=======
+$routes->get('/', 'Home::index');
+>>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7
 $routes->get('inicial', 'Inicial');
 $routes->get('cadastro_pac', to: 'Cadastro_pac');
 $routes->get('paghome', 'Paghome');
 $routes->get('group_pac','Group_pac');
 $routes->get('medico_solicitante','Medico_solicitante');
 $routes->get('consultas', 'Consultas');
+<<<<<<< HEAD
 $routes->get('pacientes', 'Pacientes::index');
 $routes->get('paghome2', 'Paghome2');
 
@@ -59,5 +64,12 @@ $routes->post('consultas/salvar', 'Consultas::salvar');
 
 $routes->get('consultas', 'Consultas::index');
 $routes->get('consultas/criar/(:num)', 'Consultas::criar/$1');
+=======
+$routes->post('pacientes/salvar', 'Pacientes::salvar');
+$routes->get('pacientes', 'Pacientes::index'); 
+$routes->post('pacientes/salvar', 'Pacientes::salvar'); 
+$routes->get('pacientes/editar/(:num)', 'Pacientes::editar/$1');
+$routes->post('pacientes/atualizar/(:num)', 'Pacientes::atualizar/$1');
+>>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7
 
 

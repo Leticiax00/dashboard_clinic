@@ -14,8 +14,12 @@
         "ext-intl": "*",
         "ext-mbstring": "*",
         "laminas/laminas-escaper": "^2.14",
+<<<<<<< HEAD
         "psr/log": "^3.0",
         "twilio/sdk": "^8.8"
+=======
+        "psr/log": "^3.0"
+>>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7
     },
     "require-dev": {
         "codeigniter/coding-standard": "^1.7",

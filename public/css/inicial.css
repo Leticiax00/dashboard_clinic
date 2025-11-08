@@ -264,11 +264,20 @@ h3 {
 .painel-agendamento {
   display: block;
   flex-direction: column;
+<<<<<<< HEAD
   width: 50%;
+=======
+  width: 100%;
+>>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7
   max-width: 350px;
   text-align: center;
   border-radius: 8px;
   z-index: 5;
+<<<<<<< HEAD
   position: relative;
   margin: auto;
+=======
+  margin-top: 10vh;
+  position: relative;
+>>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7
 }

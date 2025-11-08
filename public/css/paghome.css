@@ -91,6 +91,7 @@
         .table-container {
             overflow-x: auto; /* scroll se a tabela for maior que a tela */
         }
+<<<<<<< HEAD
        .scroll-container {
     overflow-x: auto; /* permite scroll horizontal em telas pequenas */
     margin: 20px 0;
@@ -161,6 +162,45 @@ tbody tr:hover {
 }
 
 
+=======
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 10px 12px;
+            text-align: center; 
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+        th {
+            background: #050159; 
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+        }
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        tr:hover {
+            background: #eef2ff;
+        }
+        .placeholder {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ffffff;
+        }
+
+        table {
+          margin-top: 20px;
+          width: 100vh;
+        }
+>>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7
 
   a {
     color: #ffffff;
