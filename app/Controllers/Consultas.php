@@ -2,7 +2,6 @@
 
 namespace App\Controllers;
 
-<<<<<<< HEAD
 use App\Models\ConsultaModel;
 use App\Models\PacientesModel;
 use CodeIgniter\Controller;
@@ -60,12 +59,3 @@ class Consultas extends Controller
         return redirect()->to('/consultas')->with('sucesso', 'Consulta agendada com sucesso!');
     }
 }
-=======
-class Consultas extends BaseController
-{
-    public function index()
-    {
-        return view('consultas'); 
-    }
-}
->>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7

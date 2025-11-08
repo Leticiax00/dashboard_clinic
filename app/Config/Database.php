@@ -26,17 +26,10 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-<<<<<<< HEAD
         'hostname'     => 'localhost',
         'username'     => 'root',
         'password'     => '',
         'database'     => 'clinica_db',
-=======
-        'hostname'     => '127.0.0.1',
-        'username'     => 'root',
-        'password'     => '',
-        'database'     => 'clienteswebclinic',
->>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
