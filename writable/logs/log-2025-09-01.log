@@ -1,0 +1,81 @@
+DEBUG - 2025-09-01 12:01:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 12:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 12:06:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-01 12:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 12:29:50 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "testetable;php"
+[Method: GET, Route: testetable;php]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('testetable;php')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('testetable;php')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Web_Clinic 2.0\\public\\index.php')
+ERROR - 2025-09-01 12:52:12 --> mysqli_sql_exception: Duplicate entry '' for key 'cpf' in C:\xampp\htdocs\Web_Clinic 2.0\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Web_Clinic 2.0\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\Web_Clinic 2.0\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\Web_Clinic 2.0\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\Web_Clinic 2.0\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\Web_Clinic 2.0\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Web_Clinic 2.0\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Web_Clinic 2.0\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Web_Clinic 2.0\app\Controllers\Pacientes.php(34): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Web_Clinic 2.0\system\CodeIgniter.php(933): App\Controllers\Pacientes->salvar()
+#9 C:\xampp\htdocs\Web_Clinic 2.0\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes))
+#10 C:\xampp\htdocs\Web_Clinic 2.0\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Web_Clinic 2.0\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\Web_Clinic 2.0\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\Web_Clinic 2.0\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\Web_Clinic 2.0\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2025-09-01 12:52:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'cpf'
+[Method: POST, Route: pacientes/salvar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pacientes` (`nome`, `data_nascimento`, `cpf`, `rg`, `endereco`, `convenio_medico`, `grupo_pacientes`, `sexo`, `medico_solicitante`, `laudo_url`, `observacoes`, `data_cadastro`) VALUES (:nome:, :data_nascimento:, :cpf:, :rg:, :endereco:, :convenio_medico:, :grupo_pacientes:, :sexo:, :medico_solicitante:, :laudo_url:, :observacoes:, :data_cadastro:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Pacientes.php(34): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes->salvar()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Web_Clinic 2.0\\public\\index.php')
+CRITICAL - 2025-09-01 12:52:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'cpf'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pacientes` (`nome`, `data_nascimento`, `cpf`, `rg`, `endereco`, `convenio_medico`, `grupo_pacientes`, `sexo`, `medico_solicitante`, `laudo_url`, `observacoes`, `data_cadastro`) VALUES (\'\', \'\', \'\', \'\', \'\', \'\', \'1\', \'Masculino\', \'valor 1\', NULL, \'\', \'2025-09-01 12:52:12\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pacientes` (`nome`, `data_nascimento`, `cpf`, `rg`, `endereco`, `convenio_medico`, `grupo_pacientes`, `sexo`, `medico_solicitante`, `laudo_url`, `observacoes`, `data_cadastro`) VALUES (\'\', \'\', \'\', \'\', \'\', \'\', \'1\', \'Masculino\', \'valor 1\', NULL, \'\', \'2025-09-01 12:52:12\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pacientes` (`nome`, `data_nascimento`, `cpf`, `rg`, `endereco`, `convenio_medico`, `grupo_pacientes`, `sexo`, `medico_solicitante`, `laudo_url`, `observacoes`, `data_cadastro`) VALUES (:nome:, :data_nascimento:, :cpf:, :rg:, :endereco:, :convenio_medico:, :grupo_pacientes:, :sexo:, :medico_solicitante:, :laudo_url:, :observacoes:, :data_cadastro:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Pacientes.php(34): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes->salvar()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Web_Clinic 2.0\\public\\index.php')
+CRITICAL - 2025-09-01 12:52:12 --> [Caused by] mysqli_sql_exception: Duplicate entry '' for key 'cpf'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pacientes` (`nome`, `data_nascimento`, `cpf`, `rg`, `endereco`, `convenio_medico`, `grupo_pacientes`, `sexo`, `medico_solicitante`, `laudo_url`, `observacoes`, `data_cadastro`) VALUES (\'\', \'\', \'\', \'\', \'\', \'\', \'1\', \'Masculino\', \'valor 1\', NULL, \'\', \'2025-09-01 12:52:12\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pacientes` (`nome`, `data_nascimento`, `cpf`, `rg`, `endereco`, `convenio_medico`, `grupo_pacientes`, `sexo`, `medico_solicitante`, `laudo_url`, `observacoes`, `data_cadastro`) VALUES (\'\', \'\', \'\', \'\', \'\', \'\', \'1\', \'Masculino\', \'valor 1\', NULL, \'\', \'2025-09-01 12:52:12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pacientes` (`nome`, `data_nascimento`, `cpf`, `rg`, `endereco`, `convenio_medico`, `grupo_pacientes`, `sexo`, `medico_solicitante`, `laudo_url`, `observacoes`, `data_cadastro`) VALUES (\'\', \'\', \'\', \'\', \'\', \'\', \'1\', \'Masculino\', \'valor 1\', NULL, \'\', \'2025-09-01 12:52:12\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pacientes` (`nome`, `data_nascimento`, `cpf`, `rg`, `endereco`, `convenio_medico`, `grupo_pacientes`, `sexo`, `medico_solicitante`, `laudo_url`, `observacoes`, `data_cadastro`) VALUES (:nome:, :data_nascimento:, :cpf:, :rg:, :endereco:, :convenio_medico:, :grupo_pacientes:, :sexo:, :medico_solicitante:, :laudo_url:, :observacoes:, :data_cadastro:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pacientes.php(34): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes->salvar()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Web_Clinic 2.0\\public\\index.php')

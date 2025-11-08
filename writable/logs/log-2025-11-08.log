@@ -1,0 +1,343 @@
+CRITICAL - 2025-11-08 00:20:09 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: inicial]
+in APPPATH\Views\inicial.php on line 47.
+ 1 APPPATH\Views\inicial.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\inicial.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\inicial.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('inicial', [], true)
+ 5 APPPATH\Controllers\inicial.php(9): view('inicial')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inicial->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicial))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 00:22:00 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: inicial]
+in APPPATH\Views\inicial.php on line 47.
+ 1 APPPATH\Views\inicial.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\inicial.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\inicial.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('inicial', [], true)
+ 5 APPPATH\Controllers\inicial.php(9): view('inicial')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inicial->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicial))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 00:23:44 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: inicial]
+in APPPATH\Views\inicial.php on line 48.
+ 1 APPPATH\Views\inicial.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\inicial.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\inicial.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('inicial', [], true)
+ 5 APPPATH\Controllers\inicial.php(9): view('inicial')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inicial->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicial))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 00:23:46 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: inicial]
+in APPPATH\Views\inicial.php on line 48.
+ 1 APPPATH\Views\inicial.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\inicial.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\inicial.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('inicial', [], true)
+ 5 APPPATH\Controllers\inicial.php(9): view('inicial')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inicial->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicial))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 00:24:13 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: inicial]
+in APPPATH\Views\inicial.php on line 47.
+ 1 APPPATH\Views\inicial.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\inicial.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\inicial.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('inicial', [], true)
+ 5 APPPATH\Controllers\inicial.php(9): view('inicial')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inicial->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicial))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 00:24:36 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: inicial]
+in APPPATH\Views\inicial.php on line 48.
+ 1 APPPATH\Views\inicial.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\inicial.php', 48)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\inicial.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('inicial', [], true)
+ 5 APPPATH\Controllers\inicial.php(9): view('inicial')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inicial->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicial))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 00:26:41 --> Error: Class "App\Models\PacientesModel" not found
+[Method: GET, Route: pacientes/adicionar_consulta/9]
+in APPPATH\Controllers\Consultas.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->criar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+DEBUG - 2025-11-08 00:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-11-08 00:27:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-11-08 00:30:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "consultas/index.php"
+[Method: GET, Route: consultas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('consultas/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('consultas/index', [], true)
+ 3 APPPATH\Controllers\Consultas.php(20): view('consultas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:03:53 --> Error: Class "App\Models\PacientesModel" not found
+[Method: GET, Route: pacientes/adicionar_consulta/9]
+in APPPATH\Controllers\Consultas.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->criar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:07:09 --> Error: Class "App\Models\PacientesModel" not found
+[Method: GET, Route: pacientes/adicionar_consulta/9]
+in APPPATH\Controllers\Consultas.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->criar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:09:34 --> Error: Class "App\Models\PacientesModel" not found
+[Method: GET, Route: pacientes/adicionar_consulta/9]
+in APPPATH\Controllers\Consultas.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->criar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:09:49 --> Error: Class "App\Models\PacientesModel" not found
+[Method: GET, Route: pacientes/adicionar_consulta/9]
+in APPPATH\Controllers\Consultas.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->criar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:10:37 --> Error: Class "App\Models\PacientesModel" not found
+[Method: GET, Route: pacientes/adicionar_consulta/9]
+in APPPATH\Controllers\Consultas.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->criar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:11:07 --> Error: Class "App\Models\PacientesModel" not found
+[Method: GET, Route: pacientes/adicionar_consulta/9]
+in APPPATH\Controllers\Consultas.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->criar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:11:43 --> Error: Class "App\Controllers\PacienteModel" not found
+[Method: GET, Route: pacientes/adicionar_consulta/9]
+in APPPATH\Controllers\Consultas.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->criar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:12:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "consultas/form.php"
+[Method: GET, Route: pacientes/adicionar_consulta/9]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('consultas/form.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('consultas/form', [], true)
+ 3 APPPATH\Controllers\Consultas.php(51): view('consultas/form', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->criar('9')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:13:43 --> Error: Class "App\Models\PacienteModel" not found
+[Method: GET, Route: paghome]
+in APPPATH\Controllers\paghome.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paghome->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paghome))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:14:10 --> Error: Class "App\Controllers\PacientesModel" not found
+[Method: GET, Route: paghome]
+in APPPATH\Controllers\paghome.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paghome->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paghome))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:26:17 --> ErrorException: Undefined variable $paciente
+[Method: GET, Route: inicial]
+in APPPATH\Views\inicial.php on line 52.
+ 1 APPPATH\Views\inicial.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paciente', 'C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\inicial.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\inicial.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('inicial', [], true)
+ 5 APPPATH\Controllers\inicial.php(9): view('inicial')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inicial->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicial))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:28:07 --> ErrorException: Undefined variable $dataSelecionada
+[Method: GET, Route: pacientes/adicionar_consulta/9]
+in APPPATH\Views\consultas.php on line 20.
+ 1 APPPATH\Views\consultas.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataSelecionada', 'C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\consultas.php', 20)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\dashboard_clinic-master\\app\\Views\\consultas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('consultas', [], true)
+ 5 APPPATH\Controllers\Consultas.php(51): view('consultas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->criar('9')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:33:40 --> Error: Class "App\Models\PacienteModel" not found
+[Method: GET, Route: consultas/criar/9]
+in APPPATH\Controllers\Consultas.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->criar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:42:31 --> Error: Class "App\Models\PacienteModel" not found
+[Method: GET, Route: consultas/criar/9]
+in APPPATH\Controllers\Consultas.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->criar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:53:20 --> Error: Class "App\Models\PacienteModel" not found
+[Method: GET, Route: paghome2]
+in APPPATH\Controllers\paghome2.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paghome2->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paghome2))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:53:51 --> Error: Class "App\Models\PacienteModel" not found
+[Method: GET, Route: paghome2]
+in APPPATH\Controllers\paghome2.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Paghome2->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Paghome2))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 01:55:49 --> Error: Class "App\Models\PacienteModel" not found
+[Method: GET, Route: pacientes/detalhes/9]
+in APPPATH\Controllers\Pacientes.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pacientes->detalhes('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pacientes))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 02:02:55 --> Error: Class "App\Models\PacienteModel" not found
+[Method: GET, Route: consultas/criar/9]
+in APPPATH\Controllers\Consultas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->criar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 02:03:05 --> Error: Class "App\Models\PacienteModel" not found
+[Method: GET, Route: consultas/criar/9]
+in APPPATH\Controllers\Consultas.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->criar('9')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+CRITICAL - 2025-11-08 02:04:14 --> Error: Class "App\Models\ConsultaModel" not found
+[Method: POST, Route: consultas/salvar]
+in APPPATH\Controllers\Consultas.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->salvar()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+DEBUG - 2025-11-08 02:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-11-08 02:04:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "consultas.php"
+[Method: GET, Route: consultas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('consultas.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('consultas', [], true)
+ 3 APPPATH\Controllers\Consultas.php(23): view('consultas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Consultas->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Consultas))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\dashboard_clinic-master\\public\\index.php')
+DEBUG - 2025-11-08 02:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

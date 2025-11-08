@@ -1,0 +1,179 @@
+:root {
+    --primary-color: #007BFF;
+    --primary-dark: #024d9d;
+    --success-color: #28a745;
+    --success-dark: #1e7e34;
+    --background-light: #f4f7f6;
+    --text-color: #333;
+    --label-color: #555;
+    --border-color: #ddd;
+    --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, rgb(2, 20, 99) 0%, rgb(28, 62, 176) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+/* ------------------ Estilo do Formulário (CSS GRID) ------------------ */
+
+.formPaciente {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px; 
+    padding: 30px;
+    background: white; 
+    box-shadow: var(--shadow-light);
+    max-width: 850px;
+    width: 100%;
+    position: relative;
+    z-index: 1; 
+}
+
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formPaciente .observacoes,
+.formPaciente .form-actions {
+    grid-column: 1 / -1; 
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--label-color);
+    font-size: 0.95rem;
+}
+
+.form-group input:not([type="file"]),
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a0a0a0;
+}
+
+/* Estilo para Textarea */
+#observacoes {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* ------------------ Botões e Upload ------------------ */
+
+/* Botão Salvar */
+#button_salva {
+    width: 30%;
+    padding: 12px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#button_salva:hover {
+    background-color: var(--primary-dark);
+}
+
+.file-upload-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.ficheiro {
+    flex-grow: 1; 
+    border: none !important;
+    padding: 0 !important;
+}
+
+.upload {
+    background-color: var(--success-color); 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    white-space: nowrap; 
+    transition: background-color 0.3s;
+}
+
+.upload:hover {
+    background-color: var(--success-dark);
+}
+
+.area {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0; 
+    overflow: hidden;
+    pointer-events: none; 
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none; 
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff6b;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+@keyframes animate {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; border-radius: 0; }
+    100% { transform: translateY(-1000px) rotate(720deg); opacity: 0; border-radius: 50%; }
+}
