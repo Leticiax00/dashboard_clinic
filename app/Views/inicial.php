@@ -15,11 +15,7 @@
     </ul>
   </div>
 
-<<<<<<< HEAD
    <?= view('partials/header') ?> 
-=======
-   <?php include 'partials/header.php'; ?>
->>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7
 
   <div class="container-wrapper">
     <div class="container">
@@ -43,7 +39,6 @@
           <div class="grade-dias" id="days-grid"></div>
         </div>
         <div class="painel-agendamento" id="painel-agendamento">
-<<<<<<< HEAD
   <h2 id="dia-semana"></h2>
   <h3 id="container-data">Selecione uma data</h3>
 
@@ -58,13 +53,6 @@
 
           <br> <br>
 <!--<a href="<?= base_url('consultas') ?>" class="button-agendamento2">Agenda Médica</a>-->
-=======
-          <h2 id="dia-semana"></h2>
-          <h3 id="container-data">Selecione uma data</h3>
-          <a href="<?= base_url('paghome') ?>" id="button_nova.consulta" class="button-agendamento">Nova Consulta</a>
-          <br> <br>
-          <a href="<?= base_url('consultas') ?>" class="button-agendamento2">Agenda Médica</a>
->>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7
         </div>
       </div>
 
@@ -131,7 +119,6 @@
   font-size: 22px;
   cursor: pointer;
 }
-<<<<<<< HEAD
 
  @media (max-width: 900px){
     .calendario-wrapper{ 
@@ -314,34 +301,6 @@ renderCalendar();
 
 
 
-=======
-</style>
-
-<script>
-// Pega os elementos
-const modal = document.getElementById("modal");
-const btnAbrir = document.getElementById("abrirModal");
-const btnFechar = document.querySelector(".fechar");
-
-// Abre o modal
-btnAbrir.addEventListener("click", () => {
-  modal.style.display = "flex";
-});
-
-// Fecha o modal
-btnFechar.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-// Fecha se clicar fora do conteúdo
-window.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.style.display = "none";
-  }
-});
-</script>
-
->>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7
 <script src="<?= base_url('js/inicial.js') ?>"></script>
 </body>
 </html>

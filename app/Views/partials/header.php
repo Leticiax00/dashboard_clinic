@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -58,40 +57,6 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-=======
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-</head>
-<body>
-    
-
-<div class="header" id="style_header">
-<header>
-    <a href="<?= base_url('inicial')?>" class="button_home">
-        <i class="fas fa-house"></i> Home
-    </a>
-
-    <a href="<?= base_url('paghome')?>" class="home_pac">
-        <i class="fas fa-users"></i> Pacientes Cadastrados
-    </a>
-
-    <a href="<?= base_url('cadastro_pac')?>">
-        <i class="fas fa-user-plus"></i> Novo Paciente
-    </a>
-
-    <button id="abrirModal" class="botao_pac">
-        <i class="fas fa-user-group"></i> Adicionar Grupo de Clientes
-    </button>
-</header>
-</div>
-    
-<style>
->>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7
 header {
     position: fixed;        
     top: 0;                

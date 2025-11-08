@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Grupo de Clientes | Web Clinic</title>
     <link rel="stylesheet" href="<?= base_url('css/group_pac.css') ?>">
 </head>
@@ -16,12 +15,6 @@
     </ul>
   </div>
 
-=======
-    <title>Grupo de Clientes</title>
-    <link rel="stylesheet" href="<?= base_url('css/group_pac.css') ?>">
-</head>
-<body>
->>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7
     <div class="header">
         <?= view('partials/header') ?>
     </div>
