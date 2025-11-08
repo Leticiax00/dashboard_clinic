@@ -66,7 +66,6 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-<<<<<<< HEAD
     gap: 8px;           
     padding: 12px 16px;
     z-index: 1000;     
@@ -238,46 +237,5 @@ body {
 })();
 </script>
 
-=======
-    gap: 5px;           
-    padding: 15px 20px;
-    z-index: 1000;     
-    background-color: #19025eff;
-}
-
-a:hover {
-    background-color: #007BFF;
-}
-  .botao_pac {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-
-  .button_home {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 10px;
-  }
-
-  .botao_pac:hover {
-    background-color: #0056b3;
-  }
-
-body {
-    margin: 0;
-    padding-top: 70px;  
-}
-</style>
->>>>>>> 8b77ee2d72a2e04167a97232eb6ef5ed11b6d0b7
 </body>
 </html>
